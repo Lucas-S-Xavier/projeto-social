@@ -22,6 +22,8 @@ body {
 main {
     position: relative;
     height: 100vh;
+    display: flex;
+    justify-content: end;
 }
 
 section#telefone {
@@ -46,8 +48,11 @@ iframe#tela {
 }
 
 section#redes-sociais {
-    text-align: right;
-    padding-top: 250px;
+    height: fit-content;
+    justify-content: end;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 section#redes-sociais img {
@@ -70,10 +75,6 @@ section#redes-sociais img:hover {
 
 section#telefone {
     transform: translate(-65%, -50%);
-}
-
-section#redes-sociais {
-    padding-top: 200px;
 }
 
 }
